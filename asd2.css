@@ -7,7 +7,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 .container {
@@ -64,13 +65,6 @@ button:hover {
     color: #333;
 }
 
-.result {
-    margin-top: 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-}
-
 .explanation {
     margin-top: 10px;
     font-size: 14px;
@@ -80,4 +74,22 @@ button:hover {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 12px;
+    }
+
+    .result, .explanation {
+        font-size: 14px;
+    }
 }
