@@ -1,95 +1,81 @@
+/* Alap stílusok */
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    color: #333;
+    font-family: cursive, Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+    background-color: #1a1a1a; /* Sötét háttér */
+    color: #fff; /* Fehér szöveg */
 }
 
 .container {
-    background: white;
-    padding: 20px 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 400px;
     width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333; /* Sötétebb háttér a konténerhez */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Árnyék a konténer körül */
 }
 
 h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    text-align: center;
+    color: #ffcc00; /* Sárga cím szín */
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    margin-bottom: 30px;
 }
 
 label {
-    font-size: 16px;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    display: inline-block;
 }
 
-input {
+input[type="number"] {
+    width: 100px;
     padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border: 2px solid #ffcc00; /* Sárga határ */
     border-radius: 5px;
+    background-color: #555; /* Sötétebb input mezők */
+    color: #fff;
+    font-size: 1rem;
 }
 
-button {
-    padding: 10px;
-    font-size: 16px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
+input[type="number"]:focus {
+    outline: none;
+    border-color: #ff6600; /* Fókuszáláskor narancssárga kontúr */
+    background-color: #444;
 }
 
-button:hover {
-    background-color: #45a049;
+#result {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffcc00; /* Eredmény sárga szín */
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
 }
 
-.result {
-    margin-top: 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
+#instructions {
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #444; /* Szürke háttér az instrukciókhoz */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
 }
 
-.explanation {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #555;
-    text-align: left;
-    background: #f9f9f9;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
-@media (max-width: 480px) {
-    .container {
-        padding: 15px;
-    }
+ul li {
+    margin: 10px 0;
+}
 
-    h1 {
-        font-size: 20px;
-    }
-
-    input {
-        font-size: 12px;
-    }
-
-    .result, .explanation {
-        font-size: 14px;
-    }
+ul li strong {
+    color: #ffcc00; /* Sárga kiemelés az elemeknél */
 }
